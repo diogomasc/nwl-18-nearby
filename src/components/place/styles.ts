@@ -20,7 +20,9 @@ export const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    flexShrink: 1,
     gap: 4,
+    justifyContent: "space-between",
   },
   name: {
     fontSize: 14,
@@ -28,14 +30,15 @@ export const styles = StyleSheet.create({
     color: colors.gray[600],
   },
   description: {
-    fontSize: 14,
+    fontSize: 12,
     fontFamily: fontFamily.regular,
     color: colors.gray[500],
+    flexShrink: 1,
   },
   footer: {
     flexDirection: "row",
     gap: 7,
-    marginTop: 10,
+    alignItems: "center",
   },
   tickets: {
     fontSize: 12,
